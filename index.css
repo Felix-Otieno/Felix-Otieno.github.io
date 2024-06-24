@@ -83,7 +83,7 @@ body{
 }
 
 .search{
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-top: 2px;
     
@@ -100,11 +100,16 @@ body{
     border-radius: 9999px;
     color: blue;
 }
-.destination{
+.den{
     width: 70%;
     margin: auto;
+}
+.destination{
+    width: 70%;
+    
     color: rgb(255, 255, 255);
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .row{
@@ -114,13 +119,69 @@ body{
 }
 .column{
     flex: 25%;
-    max-width: 25%;
     padding: 0 4px;
 
 }
 
 .colum >img{
     margin-top: 8px;
-    width: 100%;
+    width: 600px ;
+    height: 400px;
     vertical-align: middle;
+    
 }
+.holiday-cards{
+    width: 70%;
+    margin: auto;
+    color: white;
+    margin-top: 50px;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.card > img{
+    width: 100%;
+    height: auto;
+}
+.card-content > p{
+    margin: 8px 0;
+    font-size: 18px;
+}
+.card{
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+    width: 30%;
+    color: white;
+}
+.card-content{
+    padding: 15px;
+    text-align: center;
+}
+.card-content > h1{
+    margin: 0 0 8px;
+
+
+}
+.card-content > p{
+    margin:  8px;
+    font-size: 18px;
+}
+.card-content button{
+    margin: 8px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #850885;
+    cursor: pointer;
+
+}
+.card-content > button:hover{
+    background-color: #9c9e0e;
+
+}`  

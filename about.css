@@ -1,13 +1,21 @@
 
-
 body{
     background-color: rgb(4, 58, 44);
 }
+.navigation{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .tembea{
     color: rgb(255, 255, 255);
+
 }
 .navlinks{
-    color: rgb(250, 250, 250);
+    color: rgb(14, 72, 87);
 }
 
 .navlinks > a{
@@ -15,6 +23,7 @@ body{
     text-decoration: none;
     margin: 16px;
 }
+
 
 
 
@@ -47,6 +56,7 @@ body{
     font-size: 70px;
     margin: 0;
     color: rgb(16, 88, 61);
+    text-align: end;
 }
 
 .hero-content p{
@@ -54,7 +64,7 @@ body{
     font: bolder;
     font-size: 20px;
     margin: auto;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: left;
 
 }
