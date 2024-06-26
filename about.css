@@ -1,8 +1,7 @@
-
 body{
     background-color: rgb(4, 58, 44);
 }
-.navigation{
+.abc{
     width: 70%;
     margin: auto;
     display: flex;
@@ -10,62 +9,83 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-.tembea{
+.cde{
     color: rgb(255, 255, 255);
-
 }
-.navlinks{
-    color: rgb(14, 72, 87);
+.efg{
+    color: rgb(250, 250, 250);
 }
-
-.navlinks > a{
+.efg > a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 16px;
-}
-
-
-
-
-.hero{
-    width: 100%;
-    height: 50vh;
-    overflow: hidden;
-    position: relative;
 
 }
-.hero img{
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    display: block;
 
-}
-.hero-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+header{
+    background: black;
+    color: white;
+    width:40%;
     text-align: center;
-    color: rgb(240, 238, 218);
+    margin: auto;
 }
 
-
-
-.hero-content h1{
-    font-size: 70px;
-    margin: 0;
-    color: rgb(16, 88, 61);
-    text-align: end;
+.mission{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
 }
 
-.hero-content p{
+.reject{
+    background-color: rgb(12, 15, 14);
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+
+}
+
+.team-members{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
     margin: auto;
-    font: bolder;
-    font-size: 20px;
-    margin: auto;
-    color: rgb(0, 0, 0);
-    text-align: left;
+    
+}
+
+.members{
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.members > img{
+    width: 50%;
+    height: auto;
+    filter: grayscale(20%);
+    
+}
+.members > img:hover{
+    filter: grayscale(50%)
+}
+
+footer{
+    background: black;
+    color: white;
+    width:100%;
+    text-align: center;
+    margin: 15px
+    
 
 }
 
