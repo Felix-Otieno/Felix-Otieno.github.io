@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(100, 100, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.jackie{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.chan{
+    color: rgb(255, 255, 255);
+}
+.serve{
+    color: rgb(250, 250, 250);
+}
+.serve > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 16px;
+}
+.haah{
+    background: black;
+    color: white;
+    width:40%;
+    text-align: center;
+    margin: auto;
+}
+
+.leo{
+    width: 100%;
+    margin: auto;
+    color: white;
+    margin-top: 30px;
+}
+.leo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.leo-card > img{
+    width: 100%;
+    height: 50vh;
+}
+
+
+.leo-card{
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+    width: 20%;
+    color: white;
+}
+
+.leo-content{
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.leo-content > p{
+    margin:  8px;
+    font-size: 18px;
+
+}
