@@ -91,9 +91,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     // Update the button attributes
-    paymentButton.dataset.amount = 1000; // Replace with actual amount based on bookingDetails
+    paymentButton.dataset.amount = calculateBookingAmount(bookingDetails); // Replace with actual amount based on bookingDetails
     paymentButton.dataset.currency = "KES";
   
     // Simulate button click
     paymentButton.click();
+  }
+
+  function calculateBookingAmount(bookingDetails) {
+    const basePrice = 1000;
+    const meals = bookingDetails.meals;
+    if (meals === "yes") {
+        const mealPrice = 500;
+    }
+    else {
+        mealPrice = 0;
+
+    }
+    return(price_per_night+ mealPrice)*bookingDetails.visitors.bookingDetails
   }
