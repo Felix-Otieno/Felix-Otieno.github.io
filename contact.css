@@ -22,11 +22,16 @@ body{
     text-decoration: none;
     margin: 16px;
 }
+.sisi > a:hover {
+    color: lightgreen;
+}
 .today{
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 .today > img{
     width: 100%;

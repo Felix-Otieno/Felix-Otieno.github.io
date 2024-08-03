@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const bookButtons = document.querySelectorAll(".book-now");
   
@@ -47,7 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
       .addEventListener("submit", handleBookingFormSubmit);
   }
 
-  function handleBookingFormSubmit(event) {
+ 
+
+  function handleBookingFormSubmit(event, placeName, placeDescription) {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
@@ -57,6 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
       days: formData.get("days"),
       meals: formData.get("meals"),
       additional: formData.get("additional"),
+          
+      
     };
   
     // Proceed to IntaSend Payment
@@ -100,13 +105,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function calculateBookingAmount(bookingDetails) {
     const basePrice = 1000;
-    const meals = bookingDetails.meals;
-    if (meals === "yes") {
-        const mealPrice = 500;
+    let mealPrice;
+    
+    if (bookingDetails.meals === "yes") {
+      mealPrice = 500;
+    } else {
+      mealPrice = 0;
     }
-    else {
-        mealPrice = 0;
+    
+    return (basePrice + mealPrice) * bookingDetails.visitors * bookingDetails.days;
+  }
+  
 
-    }
-    return(price_per_night+ mealPrice)*bookingDetails.visitors.bookingDetails
+  function saveBookingToFirebase(bookingDetails) {
+    const user = firebase.auth().currentuser;
+
+    if(user) {
+    const userId = user.uid;
+    const userEmail = user.email;
+
+    const dbRef = ref(database,"booking/" + userId);
+    set(dbRef, { 
+      ...bookingDetails,
+      timestamp: firebase.firestore.Timestamp.now()
+      
+    })
+    .then(() => {
+      console.log("Bokking saved successfully");
+    })
+    .catch((error) => {
+      console.error("Error saving booking:", error);
+    })
+
+  
+} else {
+  console.error("No user signed in");
+}
   }

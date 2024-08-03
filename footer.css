@@ -1,11 +1,51 @@
 footer{
-    width: 70%;
+    background-color:rgb(16, 88, 61);
+    font-family: Arial, Helvetica, sans-serif;
     margin: auto;
-    color: white;
-    margin-top: 6rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: list-item;
+    text-align: center;
+    border-radius: 90px;
+
+   
+    
+    
 }
 
-.footer-section{
-    display: flex;
-    justify-content: space-between;
+.rara > h3 {
+    color: white;
+
+}
+
+.rrrr > a {
+    display: list-item;
+    text-align: center;
+    color: rgb(243, 9, 9);
+    text-decoration: none;
+    margin: 10px;
+    
+}
+.rrrr > a:hover {
+    color: lightgreen;
+}
+
+.toto > h3 {
+    color: white
+}
+
+.cha > a {
+    color: rgb(207, 10, 10);
+    text-decoration: none;
+    
+
+}
+.cha > a:hover {
+    color: lightgreen;
+}
+
+.ppp {
+    color: white;
+    margin: 10px;
 }

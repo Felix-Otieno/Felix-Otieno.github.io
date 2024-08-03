@@ -35,14 +35,19 @@
   }
   
   .login-container {
-    background-color: white;
+    background-image: url(yyy.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 40vw;
     margin: auto;
     height: 70vh;
     margin-top: 1vh;
+    margin-bottom: 15px;
   }
+  
   
   #submit, #create-acct-btn {
     background-color: #060b1f;;
@@ -72,3 +77,12 @@
     border: none;
     margin-top: 3%;
   }
+
+  .ppppp > img {
+    width: 60%;
+    border-radius: 9999px;
+    
+  }
+  
+    
+  

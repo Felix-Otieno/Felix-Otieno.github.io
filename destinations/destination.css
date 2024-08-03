@@ -8,6 +8,10 @@
     margin-bottom: 1em;
 }
 
+.section-title > h2 {
+    color: white;
+}
+
 .place-cards {
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +49,7 @@
 
 .card-description {
     font-size: 1em;
-    color: #030101;
+    color: #ffffff;
     margin-bottom: 1em;
 }
 
