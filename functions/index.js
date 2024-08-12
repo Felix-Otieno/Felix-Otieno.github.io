@@ -34,9 +34,3 @@ exports.sendEmailToUsersLogin = functions.firestore
         console.log("Error sending email", error);
     }
 });
-
-
-
-
-
-
